@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.navList {
+  display: flex;
+  flex-direction: row;
+  background-color: #4D4D4D;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%; }
+  .navList .navItem {
+    text-decoration: none;
+    list-style: none;
+    background-color: #4D4D4D;
+    margin: 2px;
+    margin-right: 5px;
+    padding: 5px;
+    font-size: 20px; }
+  .navList .navItem a {
+    text-decoration: none;
+    color: white; }
+    .navList .navItem a:hover {
+      background-color: black; }
+
+.landingPage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F4F6EB; }
+  .landingPage .name {
+    font-size: 100px;
+    align-items: center;
+    justify-content: center;
+    font-family: helvetica; }
+  .landingPage .tittle {
+    font-size: 35px;
+    align-items: center;
+    justify-content: center;
+    font-family: helvetica; }
+  .landingPage .labelBtn {
+    background-color: dodgerblue;
+    border-radius: 6px;
+    color: white;
+    padding: 12px 48px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 3px 5px 8px black; }
+
+.projectSection {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: dodgerblue;
+  padding: 10px;
+  width: 100%; }
+  .projectSection .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    align-items: center;
+    padding: 1px;
+    margin: 0; }
+  .projectSection .grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 0;
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: white; }
+  .projectSection .projectImg {
+    width: 100%;
+    height: 100%; }
+  .projectSection .webBtn {
+    padding: 5px 20px;
+    border-radius: 4px;
+    background-color: dodgerBlue;
+    color: white; }
+  .projectSection .githubBtn {
+    padding: 5px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 4px; }
+  @media (min-width: 1024px) {
+    .projectSection .projectSection {
+      justify-content: center; }
+    .projectSection .grid-container {
+      grid-template-columns: auto 30%;
+      grid-template-rows: 16% 16% 16% 16%;
+      justify-content: center; }
+    .projectSection .grid-item {
+      border: none; }
+    .projectSection .projName {
+      font-size: 40px; }
+    .projectSection .techUsed {
+      font-size: 20px;
+      text-align: left; }
+    .projectSection .descriptionProj {
+      font-size: 18px; }
+    .projectSection .note {
+      font-size: 16px; }
+    .projectSection .projectImg {
+      width: 10em; } }
+
+.contactSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background-color: coral; }
+  .contactSection .socialMedia {
+    margin: 10px;
+    font-size: 5em;
+    text-align: center; }
+  .contactSection .socialLinks {
+    text-decoration: none;
+    color: white; }
+    .contactSection .socialLinks:hover {
+      color: blue; }
+
+/*# sourceMappingURL=style.css.map */

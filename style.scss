@@ -1,0 +1,204 @@
+$textColor: white;
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+// nav 
+.navList{
+	display: flex;
+	flex-direction: row;
+	background-color: #4D4D4D;
+	justify-content: flex-end;
+	position: fixed;
+	width: 100%;
+	 
+.navItem{
+	text-decoration: none;
+	list-style: none;
+	  background-color: #4D4D4D;
+  margin: 2px;
+  margin-right: 5px;
+  padding: 5px;
+  font-size: 20px;
+
+}
+.navItem a{
+text-decoration: none;
+color: $textColor;
+&:hover{
+	background-color: black;
+	}
+}
+}
+	// intro section 
+.landingPage{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #F4F6EB;
+  	// padding: 25px;
+  	
+  	.name{
+  		font-size: 100px;
+  		align-items: center;
+  		justify-content: center;
+  		font-family: helvetica;
+  	}
+  	.tittle{
+  		font-size: 35px;
+  		align-items: center;
+  		justify-content: center;
+  		font-family: helvetica;
+  	}
+  	.labelBtn{
+  		background-color: dodgerblue;
+  		border-radius: 6px;
+  		color: white;
+  		padding: 12px 48px;
+  		text-align: center;
+  		cursor: pointer;
+  		font-size: 24px;
+  		box-shadow: 3px 5px 8px black;
+
+  	}
+
+}
+
+// project section
+
+.projectSection{
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: dodgerblue;
+	padding: 10px;
+	width: 100%;
+	 
+.grid-container {
+  display: grid;
+
+  grid-template-columns: auto ;
+  width: 100%;
+	align-items: center;
+  padding: 1px;
+  margin: 0;
+  
+
+}
+
+
+	
+
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 0;
+  justify-content: center;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+
+}
+
+
+// 	box-shadow: 3px 5px 8px black;
+
+		
+.projectImg{
+	width: 	100%;
+	height: 100%;
+
+}
+.webBtn{
+	padding: 5px 20px;
+	border-radius: 4px;
+	background-color: dodgerBlue;
+	color: white;
+}
+.githubBtn{
+	padding: 5px 20px;
+	background-color: black;
+	color: white;
+	border-radius: 4px;
+	
+}
+@media (min-width: 1024px) {
+	.projectSection{
+		justify-content: center;
+		
+	}
+
+
+	.grid-container{
+		grid-template-columns: auto 30% ;
+		 grid-template-rows: 16% 16% 16% 16%;
+		justify-content: center;
+		
+		
+
+
+	}
+	.grid-item{
+		border:none;
+
+		
+
+	}
+
+
+	.projName{
+		font-size: 40px;
+
+		
+	}
+	.techUsed{
+		font-size: 20px;
+		text-align: left;
+	}
+	.descriptionProj{
+		font-size: 18px;
+	}
+
+	.note{
+		font-size: 16px;
+	}
+	.projectImg{
+	width: 	10em;
+
+}
+}
+}
+
+.contactSection{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40vh;
+	background-color: coral;
+
+	.socialMedia{
+		margin: 10px;
+		font-size: 5em;
+		text-align: center;
+		
+		}
+	
+	.socialLinks{
+		text-decoration: none;
+		color: $textColor;
+		&:hover{
+		color: blue;
+	}
+}
+
+}
+
+
