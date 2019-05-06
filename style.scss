@@ -40,20 +40,21 @@ color: $textColor;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-color: #F4F6EB;
-  	// padding: 25px;
+	background-color: white;
+	
+  	
   	
   	.name{
-  		font-size: 100px;
-  		align-items: center;
-  		justify-content: center;
+  		font-size: 5em;
+  		text-align: center;
+  		
   		font-family: helvetica;
   	}
   	.tittle{
   		font-size: 35px;
-  		align-items: center;
-  		justify-content: center;
+  		text-align: center;
   		font-family: helvetica;
+  		line-height: 1.6;
   	}
   	.labelBtn{
   		background-color: dodgerblue;
@@ -72,110 +73,111 @@ color: $textColor;
 // project section
 
 .projectSection{
-	height: 100vh;
+	height: auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	background-color: dodgerblue;
-	padding: 10px;
-	width: 100%;
-	 
-.grid-container {
-  display: grid;
-
-  grid-template-columns: auto ;
-  width: 100%;
 	align-items: center;
-  padding: 1px;
-  margin: 0;
-  
-
-}
-
-
+	background-color: white;
+	padding: 35px;
 	
-
-
-.grid-item {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 0;
-  justify-content: center;
-  font-size: 30px;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  background-color: white;
+.projRow1{
+	display: flex;
+	flex-direction: column;
+	
+	
+	
+}
+.projRow2{
+	display: none;
+	flex-direction: column;
+	
+	
+}
+.projBox{
+	background-color: white;
+	width: 50vw;
+	margin: 10px;
+	font-size: 30px;
+	line-height: 75px;
+	height: auto;
+	text-align: center;
 
 }
-
-
-// 	box-shadow: 3px 5px 8px black;
-
-		
 .projectImg{
-	width: 	100%;
-	height: 100%;
-
-}
-.webBtn{
-	padding: 5px 20px;
-	border-radius: 4px;
-	background-color: dodgerBlue;
-	color: white;
-}
-.githubBtn{
-	padding: 5px 20px;
-	background-color: black;
-	color: white;
-	border-radius: 4px;
+		width: 50vw;
+   max-width: 100%; 
+   max-height: 100%;
+	}
 	
+// ipad version
+@media  (min-width:767px) {
+	.projBox{
+	background-color: white;
+	width: 40vw;
+	margin: 10px;
+	font-size: 30px;
+	line-height: 75px;
+	height:30vh;
+	text-align: center;
+
+}	
 }
-@media (min-width: 1024px) {
-	.projectSection{
-		justify-content: center;
-		
-	}
 
-
-	.grid-container{
-		grid-template-columns: auto 30% ;
-		 grid-template-rows: 16% 16% 16% 16%;
-		justify-content: center;
-		
-		
-
-
-	}
-	.grid-item{
-		border:none;
-
-		
-
-	}
-
-
-	.projName{
-		font-size: 40px;
-
-		
-	}
-	.techUsed{
-		font-size: 20px;
-		text-align: left;
-	}
-	.descriptionProj{
-		font-size: 18px;
-	}
-
-	.note{
-		font-size: 16px;
-	}
-	.projectImg{
-	width: 	10em;
 
 }
-}
-}
+@media  (min-width:767px) {
+ 	.projectSection{
+		height: 100vh ;
+		background-color: white;
+ 	}
+ 	.projBox{
+ 		// font-size: 10px !important;
+ 		line-height: 1.6 !important;
+
+ 	}
+ 	.webBtn{
+ 		background-color: dodgerblue;
+  		
+  		border: 0.16em solid rgba(255,255,255,0);
+  		border-radius: 2em;
+  		box-sizing: border-box;
+  		text-decoration: none;
+  		text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  		color: white;
+  		padding: 0.3em 1.2em;
+  		text-align: center;
+  		cursor: pointer;
+  		font-size: 24px;
+  		box-shadow: 3px 5px 8px black;
+  		
+ 	}
+ 	.githubBtn{
+ 		background-color: orange;
+  		
+  		border: 0.16em solid rgba(255,255,255,0);
+  		border-radius: 2em;
+  		box-sizing: border-box;
+  		text-decoration: none;
+  		text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+  		color: white;
+  		padding: 0.3em 1.2em;
+  		text-align: center;
+  		cursor: pointer;
+  		font-size: 24px;
+  		box-shadow: 3px 5px 8px black;
+  		
+ 	}
+ 	.projRow2{
+ 		display: flex !important;
+ 		
+ 	}
+
+
+ } 
+
+
+
 
 .contactSection{
 	display: flex;
